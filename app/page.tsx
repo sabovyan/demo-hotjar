@@ -9,10 +9,10 @@ export default function Home() {
         className="border border-black rounded p-2"
         onClick={() => {
           const siteId = process.env.NEXT_PUBLIC_HOT_JAR_SITE_ID;
-          const hotjarVersion = 6;
+          const HOT_JAR_VERSION = 6;
 
           if (siteId) {
-            Hotjar.init(Number(siteId), hotjarVersion, {
+            Hotjar.init(Number(siteId), HOT_JAR_VERSION, {
               debug: true,
             });
           } else {
