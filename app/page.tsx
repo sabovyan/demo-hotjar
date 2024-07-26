@@ -1,6 +1,7 @@
 "use client";
 
 import Hotjar from "@hotjar/browser";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
@@ -22,6 +23,10 @@ export default function Home() {
       >
         try hot jar
       </button>
+
+      <div id="embedded" className="border border-black rounded p-2">
+        embedded
+      </div>
     </main>
   );
 }
