@@ -23,10 +23,6 @@ export default function Home() {
       >
         try hot jar
       </button>
-
-      <div id="embedded" className="border border-black rounded p-2">
-        embedded
-      </div>
     </main>
   );
 }
